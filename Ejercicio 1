@@ -1,3 +1,4 @@
+#PYTHON#
 class edades:
     def CalcEdadalber(Edadjuan):
         Edadalber = Edadjuan*(2/3)
@@ -17,6 +18,7 @@ Edadmama = edades.CalcEdadmama(Edadjuan)
 print("LAS EDADES SON: ALBERTO = ",Edadalber, ", JUAN =", Edadjuan, ", ANA = ",Edadana, ", MAMÁ = ", Edadmama)
 
 
+#JAVA#
 package com.mycompany.edades;
 public class Edades {
     public static double calcEdadalber(double juan){
