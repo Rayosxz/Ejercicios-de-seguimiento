@@ -1,0 +1,25 @@
+#PYTHON#
+class nomina:
+    def SalarioBruto (valorhora, htrabajo):
+        Salario_bruto = valorhora * htrabajo
+        return Salario_bruto
+        
+    def Retencion (Pretencion, Salario_bruto):
+        Retencion_Fuente = Pretefuente * Salario_bruto
+        return Retencion_Fuente
+        
+    def SalarioNeto (Salario_bruto, Retencion_Fuente):
+        Salario_neto = Salario_bruto - Retencion_Fuente
+        return Salario_neto
+
+valorhora = 5000
+htrabajo = 48
+retencion = 12.5
+Pretefuente = retencion / 100
+Salario_bruto = nomina.SalarioBruto(valorhora, htrabajo)
+Retencion_Fuente = nomina.Retencion(Pretefuente,Salario_bruto)
+Salario_neto = nomina.SalarioNeto(Salario_bruto,Retencion_Fuente)
+
+print("Salario Bruto:" , Salario_bruto)
+print("Retención en la Fuente: ", Retencion_Fuente)
+print("Salario Neto:", Salario_neto)
