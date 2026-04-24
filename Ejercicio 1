@@ -1,0 +1,17 @@
+class edades:
+    def CalcEdadalber(Edadjuan):
+        Edadalber = Edadjuan*(2/3)
+        return Edadalber
+    def CalcEdadana(Edadjuan):
+        Edadana = Edadjuan*(4/3)
+        return Edadana
+    def CalcEdadmama(Edadjuan):
+        Edadmama = Edadjuan + Edadana + Edadalber
+        return Edadmama
+
+Edadjuan = 9
+Edadalber = edades.CalcEdadalber(Edadjuan)
+Edadana = edades.CalcEdadana(Edadjuan)
+Edadmama = edades.CalcEdadmama(Edadjuan)
+
+print("LAS EDADES SON: ALBERTO = ",Edadalber, ", JUAN =", Edadjuan, ", ANA = ",Edadana, ", MAMÁ = ", Edadmama)
