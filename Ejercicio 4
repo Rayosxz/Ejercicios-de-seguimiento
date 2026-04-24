@@ -1,0 +1,16 @@
+#PYTHON#
+class operacion:
+    def cuadrado(x):
+        x = x*x
+        return x
+    
+    def cubo(x):
+        x = x*x*x
+        return x
+x = 4
+cuadrado = operacion.cuadrado(x)
+cubo = operacion.cubo(x)
+
+print("Cuadrado:" , cuadrado)
+print("Cubo:" , cubo)
+
