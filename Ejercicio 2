@@ -1,0 +1,30 @@
+#PYTHON#
+class operaciones:
+    def CalcSuma(x,y,suma):
+        suma = suma + x
+        x = x + y**2
+        suma = suma + (x/y)
+        return suma
+
+suma = 0
+x= 20
+y = 40
+print("EL VALOR DE LA SUMA ES: ",operaciones.CalcSuma(x,y,suma))
+
+
+#JAVA#
+public class Operaciones {
+    public static double calcSuma(double x, double y, double suma) { 
+        suma = suma + x;
+        x = x + (y*y);
+        suma = suma + (x / y);
+        return suma;
+    }
+    public static void main(String[] args) {
+        double suma = 0;
+        double x = 20;
+        double y = 40;
+        suma = calcSuma(x, y, suma);
+        System.out.println("La suma es: " + suma);
+    }
+}
