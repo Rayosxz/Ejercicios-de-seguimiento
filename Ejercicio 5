@@ -1,0 +1,15 @@
+import math
+class geometria:
+    def longitud(radio):
+        diametro = radio * 2
+        longitud = diametro * math.pi
+        return longitud
+    def area(radio):
+        area = (radio**2) * math.pi
+        return area
+radio = 3
+longitud = geometria.longitud(radio)
+area = geometria.area(radio)
+
+print("Longitud circunferencia: ", longitud)
+print("Área círculo: ", area)
